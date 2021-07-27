@@ -1,0 +1,260 @@
+[
+	{
+		"id": "discordbot",
+		"title": "Discord Bots",
+		"description": "Multi-domain Discord bots for community support, engagement and monitoring",
+		"description_long": "Custom bots are very useful and fun for online communities and I'm doing the best I can to support the ones I am a part of.<br>These bots can stream messages from and to other community hangouts to and from Discord, easily query APIs and do calculations (very handy for time-zone conversion for scheduling), handle reminders, automatically assign roles and permissions for both fun and aid in moderation, and much more.",
+		"icons": ["discord", "python", "nodejs", "typescript", "docker"],
+		"color": "162, 159, 227",
+		"images": [
+			{ "file": "minecraft.png", "caption": "Minecraft Chat Synchronization" },
+			{ "file": "music.png", "caption": "Live Music Streaming" },
+			{ "file": "roll.png", "caption": "Misc Fun" },
+			{ "file": "twitter.png", "caption": "Twitter API" },
+			{ "file": "roles.png", "caption": "Automatic Role Assignments" },
+			{ "file": "gameplay.png", "caption": "Gameplay Support" }
+		],
+		"technologies": [
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			},
+			{
+				"name": "disord.py",
+				"url": "https://discordpy.readthedocs.io/en/stable/",
+				"explanation": "Discord API wrapper for Python"
+			},
+			{
+				"name": "Red Discord Bot",
+				"url": "https://github.com/Cog-Creators/Red-DiscordBot",
+				"explanation": "Modular Discord Bot framework in Python"
+			},
+			{
+				"name": "DiscordSRV",
+				"url": "https://www.spigotmc.org/resources/discordsrv.18494/",
+				"explanation": "Minecraft ⇔ Discord chat synchronization"
+			},
+			{
+				"name": "Node.js",
+				"url": "https://nodejs.org/en/",
+				"explanation": "Runtime for JavaScript/Typescript parts"
+			},
+			{
+				"name": "discord.js",
+				"url": "https://discord.js.org/",
+				"explanation": "Discord API wrapper for JS/TS"
+			},
+			{
+				"name": "Akairo",
+				"url": "https://discord-akairo.github.io/#/",
+				"explanation": "Discord Bot framework for discord.js"
+			},
+			{
+				"name": "Miscellaneous APIs",
+				"url": "",
+				"explanation": "[Twitter](https://developer.twitter.com/en/docs/twitter-api), [Twitch](https://dev.twitch.tv/docs/api/), [Wolfram Alpha](https://products.wolframalpha.com/api/), [Minecraft](https://wiki.vg/Mojang_API), [YOURLS](https://yourls.org) ([custom URL shortener](/projects/yourls)), [Wikipedia](https://www.mediawiki.org/wiki/API)"
+			}
+		]
+	},
+	{
+		"id": "minecraft",
+		"title": "Minecraft Servers",
+		"description": "Hosting, management and configuration of community-oriented Minecraft servers",
+		"description_long": "I'm hosting and managing multiple Minecraft servers for my communities to hang out on. These are the main reason for me to rent two root servers that I completely set up and maintain myself.<br>The Minecraft servers are set up in a wide variety of modes: strict vanilla gameplay, creative and project-based build servers, and special event mod packs, and pure fantasy roleplay servers. Almost all of those use different mods and plugins, but [Multicraft](https://www.multicraft.org) helps enormously with the back-end management.",
+		"icons": ["docker", "minecraft", "cloudflare", "java"],
+		"color": "90, 154, 48",
+		"images": [
+			{ "file": "multicraft.png", "caption": "Multicraft Web Interface" },
+			{ "file": "doc.png", "caption": "" },
+			{ "file": "mirrorpark.png", "caption": "" },
+			{ "file": "sneakyrp.png", "caption": "" },
+			{ "file": "juliusbaer.png", "caption": "" }
+		],
+		"technologies": [
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			},
+			{
+				"name": "Multicraft",
+				"url": "https://www.multicraft.org",
+				"explanation": "Server management web interface"
+			},
+			{
+				"name": "Cloudflare",
+				"url": "https://www.cloudflare.com",
+				"explanation": "Subdomain DNS management"
+			}
+		]
+	},
+	{
+		"id": "rawbackup",
+		"title": "Twitch Archive",
+		"description": "Moderation and maintenance of YouTube channel for Twitch Archive",
+		"description_long": "[RAWBackup](https://vods.rawb.tv) is the YouTube channel where I upload and maintain [rawb](https://twitch.tv/rawb)'s Twitch streams.<br>I'm using a custom command line script that downloads the vods from Twitch and uploads them to YouTube, already with some default tags and release schedule. Then, I manually fill out the content-specific tags and playlists and, if I have time, add timestamps to noteworthy moments to the description. Having this channel has proven very valuable to the community since it's very easy to find and reminisce about past jokes and other fun moments.",
+		"icons": ["docker", "youtube"],
+		"color": "206, 26, 25",
+		"images": [{ "file": "youtube.png", "caption": "YouTube Channel" }],
+		"technologies": [
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			},
+			{
+				"name": "youtube-dl",
+				"url": "https://ytdl-org.github.io/youtube-dl/",
+				"explanation": "Command-line program for downloading vods from Twitch"
+			},
+			{
+				"name": "FFmpeg",
+				"url": "https://www.ffmpeg.org",
+				"explanation": "For video conversion and cutting"
+			},
+			{
+				"name": "youtube-upload",
+				"url": "https://github.com/tokland/youtube-upload",
+				"explanation": "Command-line script to upload vods to YouTube via their [API](https://developers.google.com/youtube/v3)"
+			}
+		]
+	},
+	{
+		"id": "mlmmo",
+		"title": "MLMMO Overlay",
+		"description": "Remote-controlled stream overlay for live stream producers",
+		"description_long": "This project has 3 main parts: The <b>overlay</b>, the <b>web server</b>, and the <b>producer client</b>.<br>The Overlay is an html page with a transparent background and several stacked video players to play transparent videos and music. After live broadcasters add this to their streams, it connects to the server using a web socket and waits for commands to pre-load/play videos.<br>The Server manages rooms, authenticates overlays and clients and forwards video commands to the right overlay(s). It accepts requests through an HTTP API, or from a producer web interface through socket connections.<br>The producer clients can be anything from hardware-buttons that send specific requests to the API to a web interface with easy controls for play/pause, etc. I coded a small [Wox](http://wox.one) plugin for basic video/music control.",
+		"icons": ["nodejs", "typescript", "python", "obs", "docker"],
+		"color": "255, 38, 164",
+		"images": [],
+		"technologies": [
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			},
+			{
+				"name": "Node.js",
+				"url": "https://nodejs.org/en/",
+				"explanation": "Runtime for JavaScript/Typescript parts"
+			},
+			{
+				"name": "socket.io",
+				"url": "https://socket.io",
+				"explanation": "For sending real-time commands through a web server"
+			}
+		]
+	},
+	{
+		"id": "yourls",
+		"title": "YOURLS URL Shortener",
+		"description": "Self-hosted URL shortener",
+		"description_long": "Simple URL shortener that was very easy to set up in a php container. It has a neat API that I integrated into our [Discord bot](/projects/discordbot), [ShareX](https://getsharex.com), and a custom [Wox](http://wox.one) plugin that can shorten links with a button press.",
+		"icons": ["docker", "php", "python"],
+		"color": "67, 147, 187",
+		"images": [
+			{ "file": "interface.png", "caption": "YOURLS Web Interface" },
+			{ "file": "traffic.png", "caption": "Traffic Statistics" },
+			{ "file": "discord.png", "caption": "Discord Bot Integration" }
+		],
+		"technologies": [
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			},
+			{
+				"name": "YOURLS",
+				"url": "https://yourls.org/#About",
+				"explanation": "Self-hosted URL shortener"
+			},
+			{
+				"name": "API Integrations",
+				"url": "",
+				"explanation": "[YOURLS API](https://yourls.org/#API) allows easy integration into [Discord Bot](/projects/discordbot) and [ShareX](https://getsharex.com)"
+			}
+		]
+	},
+	{
+		"id": "sharex",
+		"title": "ShareX Uploader",
+		"description": "Custom file uploader for ShareX",
+		"description_long": "This is a php script that receives files from (authenticated) [ShareX](https://getsharex.com) clients, stores them on the web server, and returns their URL to the user. This made taking and sharing screenshots and gifs way easier, doesn't require trust in a third party like Imgur, and also supports large files of any type.<br>I also coded a small [Wox](http://wox.one) plugin to delete stuff from the server that doesn't need to be public anymore.",
+		"icons": ["docker", "php", "python"],
+		"color": "2, 200, 27",
+		"images": [{ "file": "context.png", "caption": "Context Menu Integration" }],
+		"technologies": [
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			},
+			{
+				"name": "ShareX",
+				"url": "https://getsharex.com",
+				"explanation": "Client-side application for capturing and editing screenshots"
+			},
+			{
+				"name": "Custom Wox plugin",
+				"url": "",
+				"explanation": "Custom plugin for the [Wox Launcher](http://wox.one) to schedule deletion of files and images"
+			}
+		]
+	},
+	{
+		"id": "emotecounter",
+		"title": "Stream Emote Counter",
+		"description": "Small application for counting chat emotes during a live show",
+		"description_long": "This is a small program I put together in a day that simply kept track emote usage during one specific live show (The finale of the Sneakymon Anime during the [The Robert Moran Christmas Special 2020](https://www.youtube.com/watch?v=h9m-APJY-0I&t=10h42m50s)). It did it's job well and will be re-purposed for other fun stuff in the future.",
+		"icons": ["javascript", "electron", "twitch"],
+		"color": "116, 94, 98",
+		"images": [{ "file": "emotecounter.png", "caption": "Counter GUI" }],
+		"technologies": [
+			{
+				"name": "Electron",
+				"url": "https://www.electronjs.org",
+				"explanation": "For creating GUI and executable"
+			},
+			{
+				"name": "tmi.js",
+				"url": "https://github.com/tmijs/tmi.js",
+				"explanation": "JavaScript wrapper for the Twitch IRC api"
+			}
+		]
+	},
+	{
+		"id": "videoediting",
+		"title": "Video Editing",
+		"description": "Small, fun video editing jobs and memes",
+		"description_long": "Every now and then I've dabbled in video editing - my [YouTube channel](https://youtube.com/danidipp) is home to the one or other result of this experimentation.<br>But one of my largest projects with over 2 weeks of work was [Episode 9 of the Sneakymon Anime](https://www.youtube.com/watch?v=h9m-APJY-0I&t=5h40m25s). This was a massive community project, involving well over 30 members and producing 14 episodes of a fun, knock-off Pokémon show. For this episode specifically, my fellow community members worked on recording voice, sfx and background/puppet design and animations and I put that all together, added visual effects and learned a ton in the process.",
+		"icons": ["video-editing"],
+		"color": "248, 203, 48",
+		"images": [
+			{ "file": "sneakymon.gif", "caption": "Sneakymon Episode 9" },
+			{ "file": "greenscreen.gif", "caption": "Green Screen Experiments" }
+		],
+		"technologies": [
+			{
+				"name": "FXhome Hitfilm Pro",
+				"url": "https://fxhome.com/product/hitfilm-pro",
+				"explanation": "Used for visual effects & composition"
+			},
+			{
+				"name": "MAGIX Vegas Pro 14",
+				"url": "https://www.vegascreativesoftware.com/us/vegas-pro/",
+				"explanation": "Used for cutting & audio synchronization"
+			},
+			{
+				"name": "FFmpeg",
+				"url": "https://www.ffmpeg.org",
+				"explanation": "For media conversion"
+			},
+			{
+				"name": "Audacity",
+				"url": "https://www.audacityteam.org",
+				"explanation": "Used for recording, mixing, & cutting audio"
+			}
+		]
+	}
+]
