@@ -1,0 +1,43 @@
+name: Vue build and SSH deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+    
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v2
+    
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build project
+        run: npm run build
+    
+      - name: Copy via ssh
+        # You may pin to the exact commit or the version.
+        # uses: garygrossgarten/github-action-scp@dba89d858413133b6e35da91a3c989cc8cde3ad4
+        uses: garygrossgarten/github-action-scp@v0.7.3
+        with:
+          # Path to the local folder you want to copy.
+          local: dist
+          # Path on the remote server to copy to.
+          remote: /var/www/html
+          # Hostname or IP address of the server.
+          host: ${{ secrets.SSH_HOST }}
+          # Username for authentication.
+          username: ${{ secrets.SSH_USERNAME }}
+          # Password for password-based user authentication.
+          password: ${{ secrets.SSH_PASSWORD }}
