@@ -203,6 +203,31 @@
 		]
 	},
 	{
+		"id": "portfolio",
+		"title": "Portfolio",
+		"description": "This portfolio website and a collection of my projects",
+		"description_long": "I used this project to try out Vue.js and to present my free-time projects and technologies online. Also using GitHub Actions for continuous deployment",
+		"icons": ["vue", "typescript", "github"],
+		"color": "15, 189, 230",
+		"images": [
+			{ "file": "homepage.png", "caption": "Homepage" },
+			{ "file": "projects.png", "caption": "Project list" },
+			{ "file": "recursion.png", "caption": "This page" }
+		],
+		"technologies": [
+			{
+				"name": "Vue.js",
+				"url": "https://vuejs.org",
+				"explanation": "JS/TS Framework for building the website"
+			},
+			{
+				"name": "GitHub Actions",
+				"url": "https://github.com/features/actions",
+				"explanation": "For automatic deployment to my server"
+			}
+		]
+	},
+	{
 		"id": "emotecounter",
 		"title": "Stream Emote Counter",
 		"description": "Small application for counting chat emotes during a live show",
