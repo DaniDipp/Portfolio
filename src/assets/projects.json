@@ -147,32 +147,27 @@
 		]
 	},
 	{
-		"id": "yourls",
-		"title": "YOURLS URL Shortener",
-		"description": "Self-hosted URL shortener",
-		"description_long": "Simple URL shortener that was very easy to set up in a php container. It has a neat API that I integrated into our [Discord bot](/projects/discordbot), [ShareX](https://getsharex.com), and a custom [Wox](http://wox.one) plugin that can shorten links with a button press.",
-		"icons": ["docker", "php", "python"],
-		"color": "67, 147, 187",
+		"id": "portfolio",
+		"title": "Portfolio",
+		"description": "This portfolio website and a collection of my projects",
+		"description_long": "I used this project to try out Vue.js and to present my free-time projects and technologies online. Also using GitHub Actions for continuous deployment",
+		"icons": ["vue", "typescript", "github"],
+		"color": "15, 189, 230",
 		"images": [
-			{ "file": "interface.png", "caption": "YOURLS Web Interface" },
-			{ "file": "traffic.png", "caption": "Traffic Statistics" },
-			{ "file": "discord.png", "caption": "Discord Bot Integration" }
+			{ "file": "homepage.png", "caption": "Homepage" },
+			{ "file": "projects.png", "caption": "Project list" },
+			{ "file": "recursion.png", "caption": "This page" }
 		],
 		"technologies": [
 			{
-				"name": "Docker",
-				"url": "https://www.docker.com",
-				"explanation": "For containerization"
+				"name": "Vue.js",
+				"url": "https://vuejs.org",
+				"explanation": "JS/TS Framework for building the website"
 			},
 			{
-				"name": "YOURLS",
-				"url": "https://yourls.org/#About",
-				"explanation": "Self-hosted URL shortener"
-			},
-			{
-				"name": "API Integrations",
-				"url": "",
-				"explanation": "[YOURLS API](https://yourls.org/#API) allows easy integration into [Discord Bot](/projects/discordbot) and [ShareX](https://getsharex.com)"
+				"name": "GitHub Actions",
+				"url": "https://github.com/features/actions",
+				"explanation": "For automatic deployment to my server"
 			}
 		]
 	},
@@ -203,27 +198,32 @@
 		]
 	},
 	{
-		"id": "portfolio",
-		"title": "Portfolio",
-		"description": "This portfolio website and a collection of my projects",
-		"description_long": "I used this project to try out Vue.js and to present my free-time projects and technologies online. Also using GitHub Actions for continuous deployment",
-		"icons": ["vue", "typescript", "github"],
-		"color": "15, 189, 230",
+		"id": "yourls",
+		"title": "YOURLS URL Shortener",
+		"description": "Self-hosted URL shortener",
+		"description_long": "Simple URL shortener that was very easy to set up in a php container. It has a neat API that I integrated into our [Discord bot](/projects/discordbot), [ShareX](https://getsharex.com), and a custom [Wox](http://wox.one) plugin that can shorten links with a button press.",
+		"icons": ["docker", "php", "python"],
+		"color": "67, 147, 187",
 		"images": [
-			{ "file": "homepage.png", "caption": "Homepage" },
-			{ "file": "projects.png", "caption": "Project list" },
-			{ "file": "recursion.png", "caption": "This page" }
+			{ "file": "interface.png", "caption": "YOURLS Web Interface" },
+			{ "file": "traffic.png", "caption": "Traffic Statistics" },
+			{ "file": "discord.png", "caption": "Discord Bot Integration" }
 		],
 		"technologies": [
 			{
-				"name": "Vue.js",
-				"url": "https://vuejs.org",
-				"explanation": "JS/TS Framework for building the website"
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
 			},
 			{
-				"name": "GitHub Actions",
-				"url": "https://github.com/features/actions",
-				"explanation": "For automatic deployment to my server"
+				"name": "YOURLS",
+				"url": "https://yourls.org/#About",
+				"explanation": "Self-hosted URL shortener"
+			},
+			{
+				"name": "API Integrations",
+				"url": "",
+				"explanation": "[YOURLS API](https://yourls.org/#API) allows easy integration into [Discord Bot](/projects/discordbot) and [ShareX](https://getsharex.com)"
 			}
 		]
 	},
