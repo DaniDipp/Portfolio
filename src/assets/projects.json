@@ -127,7 +127,12 @@
 		"description_long": "This project has 3 main parts: The <b>overlay</b>, the <b>web server</b>, and the <b>producer client</b>.<br>The Overlay is an html page with a transparent background and several stacked video players to play transparent videos and music. After live broadcasters add this to their streams, it connects to the server using a web socket and waits for commands to pre-load/play videos.<br>The Server manages rooms, authenticates overlays, and clients and forwards video commands to the right overlay(s). It accepts requests through an HTTP API, or from a producer web interface through socket connections.<br>The producer clients can be anything from hardware-buttons that send specific requests to the API to a web interface with easy controls for play/pause, etc. I coded a small [Wox](http://wox.one) plugin for basic video/music control.",
 		"icons": ["nodejs", "typescript", "python", "obs", "docker"],
 		"color": "255, 38, 164",
-		"images": [],
+		"images": [
+			{
+				"file": "presentation.gif",
+				"caption": "Wox plugin & video demonstration"
+			}
+		],
 		"technologies": [
 			{
 				"name": "Docker",
@@ -143,6 +148,16 @@
 				"name": "socket.io",
 				"url": "https://socket.io",
 				"explanation": "For sending real-time commands through a web server"
+			},
+			{
+				"name": "OBS Studio",
+				"url": "https://obsproject.com",
+				"explanation": "Embedding the HTML page into livestreams"
+			},
+			{
+				"name": "Custom Wox plugin",
+				"url": "",
+				"explanation": "Custom plugin for the [Wox Launcher](http://wox.one) to send video and audio play commands to the server"
 			}
 		]
 	},
