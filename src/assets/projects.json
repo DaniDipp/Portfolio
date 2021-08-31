@@ -296,5 +296,31 @@
 				"explanation": "Used for recording, mixing, & cutting audio"
 			}
 		]
+	},
+	{
+		"id": "twitchrelay",
+		"title": "Twitch Relay",
+		"description": "Forwarding Twitch chat messages to Redis streams for further processing",
+		"description_long": "As part of my experimentation with micro services and event-driven architecture, I set up this small Go app that collects user messages and system announcements from the Twitch IRC API and sends them to Redis Streams for other services to evaluate and react to.\nLike all of my current projects, this is using GitHub Actions for continuous deployment",
+		"icons": ["go", "redis", "twitch", "github"],
+		"color": "2, 200, 27",
+		"images": [],
+		"technologies": [
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			},
+			{
+				"name": "Redis",
+				"url": "https://redis.io",
+				"explanation": "Redis streams for event distribution"
+			},
+			{
+				"name": "GitHub Actions",
+				"url": "https://github.com/features/actions",
+				"explanation": "For automatic compilation and deployment to my server"
+			}
+		]
 	}
 ]
