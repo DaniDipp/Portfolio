@@ -1,6 +1,6 @@
 <template>
 	<div class="body">
-		<Card v-for="project in projects" :key="project.id" :project="project" />
+		<Card v-for="project in projects.filter((p) => p.id)" :key="project.id" :project="project" />
 	</div>
 </template>
 

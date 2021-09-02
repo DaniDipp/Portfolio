@@ -9,7 +9,7 @@
 				class="mySlides fade"
 			>
 				<div class="numbertext">{{ index + 1 }} / {{ project.images.length }}</div>
-				<img :src="require(`../assets/img/${project.id}/${image.file}`)" style="width:100%" />
+				<img :src="getImage(project.id, image.file)" style="width:100%" />
 				<div class="text">{{ image.caption }}</div>
 			</div>
 
@@ -54,10 +54,19 @@
 				if (slide.value < 0) slide.value = props.project.images.length - 1;
 			}
 
+			function getImage(projectId: string, file: string) {
+				try {
+					return require(`@/assets/img/${projectId}/${file}`);
+				} catch (e) {
+					return require("@/assets/img/default.png");
+				}
+			}
+
 			return {
 				slide,
 				prev,
 				next,
+				getImage,
 			};
 		},
 	});

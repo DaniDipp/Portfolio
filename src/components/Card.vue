@@ -1,18 +1,13 @@
 <template>
 	<router-link :to="`/projects/${project.id}`">
 		<div class="card" :style="cssVars">
-			<img :src="require(`../assets/img/${project.id}/icon.png`)" :alt="`${project.title} Image`" />
+			<img :src="iconSrc" :alt="`${project.title} Image`" />
 			<div class="content">
 				<h1>{{ project.title }}</h1>
 				<p>{{ project.description }}</p>
 				<div class="ellipses">
 					<div class="icons">
-						<img
-							v-for="icon in project.icons"
-							:key="icon"
-							:src="require(`../assets/icons/${icon}.svg`)"
-							:title="icon"
-						/>
+						<img v-for="icon in project.icons" :key="icon" :src="getIcon(icon)" :title="icon" />
 					</div>
 				</div>
 			</div>
@@ -29,11 +24,35 @@
 				type: Object,
 			},
 		},
-		setup(props) {
+		setup({ project }) {
+			let iconSrc: string;
+
+			try {
+				iconSrc = require(`../assets/img/${project.id}/icon.png`);
+			} catch (e) {
+				try {
+					iconSrc = require(`../assets/img/${project.id}/icon.gif`);
+				} catch (e) {
+					iconSrc = require("../assets/img/default.png");
+				}
+			}
+
+			const cssVars = {
+				"--projectColor": project.color,
+			};
+
+			const getIcon = function(icon: string) {
+				try {
+					return require(`@/assets/icons/${icon}.svg`);
+				} catch (e) {
+					return require(`@/assets/icons/default.svg`);
+				}
+			};
+
 			return {
-				cssVars: {
-					"--projectColor": props.project.color,
-				},
+				iconSrc,
+				cssVars,
+				getIcon,
 			};
 		},
 	});

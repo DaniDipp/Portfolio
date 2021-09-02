@@ -3,7 +3,7 @@
 		<h1>{{ project.title }}</h1>
 		<span>{{ project.description }}</span>
 		<div class="icons">
-			<img v-for="icon in project.icons" :key="icon" :src="require(`../assets/icons/${icon}.svg`)" :title="icon" />
+			<img v-for="icon in project.icons" :key="icon" :src="getIcon(icon)" :title="icon" />
 		</div>
 		<div class="part1">
 			<Carousel v-if="project.images.length > 0" :project="project" class="images"></Carousel>
@@ -51,11 +51,22 @@
 				);
 			}
 
+			const cssVars = {
+				"--projectColor": project?.color,
+			};
+
+			const getIcon = function(icon: string) {
+				try {
+					return require(`@/assets/icons/${icon}.svg`);
+				} catch (e) {
+					return require(`@/assets/icons/default.svg`);
+				}
+			};
+
 			return {
 				project,
-				cssVars: {
-					"--projectColor": project?.color,
-				},
+				cssVars,
+				getIcon,
 			};
 		},
 	});
