@@ -376,5 +376,41 @@
 				"explanation": "Minecraft server (also containerized) for community events"
 			}
 		]
+	},
+	{
+		"id": "serverrender",
+		"title": "Server-side Video Rendering API",
+		"description": "Rendering small, transparent videos on-the-fly for live stream overlay",
+		"description_long": "When this server-side application receives a web request, it parses the URL parameters and uses them to create a custom images sequence which is stitched together to a video by ffmpeg and sent back in the response. The video is also cached to instantly reply to future requests with the same parameters.",
+		"icons": ["typescript", "deno", "ffmpeg", "github", "docker"],
+		"color": "194, 69, 131",
+		"images": [],
+		"technologies": [
+			{
+				"name": "Deno",
+				"url": "https://deno.land",
+				"explanation": "Trying out Deno instead of [node.js](https://nodejs.org)"
+			},
+			{
+				"name": "Typescript",
+				"url": "https://www.typescriptlang.org",
+				"explanation": "For type-safe code"
+			},
+			{
+				"name": "FFmpeg",
+				"url": "https://www.ffmpeg.org",
+				"explanation": "Conversion of image-sequences to transparent videos"
+			},
+			{
+				"name": "GitHub Actions",
+				"url": "https://github.com/features/actions",
+				"explanation": "For automatic compilation and deployment to my server"
+			},
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			}
+		]
 	}
 ]
