@@ -4,7 +4,7 @@
 		"title": "Discord Bots",
 		"description": "Multi-domain Discord bots for community support, engagement, and monitoring",
 		"description_long": "Custom bots are very useful and fun for online communities and I'm doing the best I can to support the ones I am a part of.<br>These bots can stream messages from and to other community hangouts to and from Discord, easily query APIs, and do calculations (very handy for time-zone conversion for scheduling), handle reminders, automatically assign roles and permissions for both fun and aid in moderation, and much more.",
-		"icons": ["discord", "python", "nodejs", "typescript", "docker"],
+		"icons": ["discord", "python", "nodejs", "typescript", "twitter", "docker"],
 		"color": "162, 159, 227",
 		"images": [
 			{ "file": "minecraft.png", "caption": "Minecraft Chat Synchronization" },
