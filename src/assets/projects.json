@@ -322,5 +322,59 @@
 				"explanation": "For automatic compilation and deployment to my server"
 			}
 		]
+	},
+	{
+		"id": "hermatrix",
+		"title": "Hermatrix ARG",
+		"description": "Alternate Reality Game to promote community engagement for a Minecraft YouTube series.",
+		"description_long": "As part of [Docm77](https://youtube.com/docm77)'s and [Rendog](https://youtube.com/rendog)'s Minecraft series on YouTube, this alternate reality game promotes community interest and engagement with riddles, puzzles and minigames across various multi-media domains.",
+		"icons": ["docker", "gitlab", "nodejs", "minecraft"],
+		"color": "124, 0, 178",
+		"images": [
+			{
+				"file": "website.gif",
+				"caption": ""
+			},
+			{
+				"file": "asteroids.gif",
+				"caption": ""
+			},
+			{
+				"file": "minecraft.png",
+				"caption": ""
+			}
+		],
+		"technologies": [
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			},
+			{
+				"name": "GitLab CI/CD",
+				"url": "https://docs.gitlab.com/ee/ci/",
+				"explanation": "For continuous deployment"
+			},
+			{
+				"name": "Node.js",
+				"url": "https://nodejs.org",
+				"explanation": "Majority of server-side logic"
+			},
+			{
+				"name": "Socket.io",
+				"url": "https://socket.io/",
+				"explanation": "Real-time communication between clients and server"
+			},
+			{
+				"name": "Google Analytics",
+				"url": "https://analytics.google.com/analytics/web/",
+				"explanation": "For tracking user engagement"
+			},
+			{
+				"name": "Minecraft",
+				"url": "https://minecraft.net",
+				"explanation": "Minecraft server (also containerized) for community events"
+			}
+		]
 	}
 ]
