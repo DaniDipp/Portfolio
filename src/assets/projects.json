@@ -302,7 +302,7 @@
 		"title": "Twitch Relay",
 		"description": "Forwarding Twitch chat messages to Redis streams for further processing",
 		"description_long": "As part of my experimentation with micro services and event-driven architecture, I set up this small Go app that collects user messages and system announcements from the Twitch IRC API and sends them to Redis Streams for other services to evaluate and react to.\nLike all of my current projects, this is using GitHub Actions for continuous deployment",
-		"icons": ["go", "redis", "twitch", "github"],
+		"icons": ["go", "redis", "twitch", "github", "docker"],
 		"color": "2, 200, 27",
 		"images": [],
 		"technologies": [
@@ -405,6 +405,50 @@
 				"name": "GitHub Actions",
 				"url": "https://github.com/features/actions",
 				"explanation": "For automatic compilation and deployment to my server"
+			},
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			}
+		]
+	},
+	{
+		"id": "wiki",
+		"title": "Community Wikis",
+		"description": "Online wikis for collecting and curating guides, tutorials and general info about various community areas",
+		"description_long": "I'm hosting a few instances of the [Wiki.js](https://js.wiki) software so my communities have a place to put guides, tutorials and general infos about our collective projects.\nIt uses Oauth2 with [Discord](https://discord.com) for authentication and [GitHub](https://github.com) for persistance and version control.",
+		"icons": ["wikijs", "docker", "github"],
+		"color": "5, 183, 238",
+		"images": [
+			{
+				"file": "homepage.png",
+				"caption": "SneakyRP Homepage"
+			},
+			{
+				"file": "shaders.png",
+				"caption": "Communtiy-written page"
+			},
+			{
+				"file": "github.png",
+				"caption": "GitHub for persistence and version control"
+			}
+		],
+		"technologies": [
+			{
+				"name": "Wiki.js",
+				"url": "https://js.wiki",
+				"explanation": "The Software that's used to bring the wikis to life"
+			},
+			{
+				"name": "Discord",
+				"url": "https://discord.com",
+				"explanation": "For OAuth2 authentication"
+			},
+			{
+				"name": "GitHub",
+				"url": "https://github.com",
+				"explanation": "For persistence and version control"
 			},
 			{
 				"name": "Docker",
