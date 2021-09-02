@@ -301,6 +301,7 @@
 		"id": "twitchrelay",
 		"title": "Twitch Relay",
 		"description": "Forwarding Twitch chat messages to Redis streams for further processing",
+		"description_long": "As part of my experimentation with micro services and event-driven architecture, I set up this small Go app that collects user messages and system announcements from the Twitch IRC API and sends them to Redis Streams for other services to evaluate and react to.<br>Like all of my current projects, this is using GitHub Actions for continuous deployment",
 		"icons": ["go", "redis", "twitch", "github", "docker"],
 		"color": "2, 200, 27",
 		"images": [],
@@ -453,6 +454,36 @@
 				"name": "Docker",
 				"url": "https://www.docker.com",
 				"explanation": "For containerization"
+			}
+		]
+	},
+	{
+		"id": "htlnoodlebot",
+		"title": "HTL Noodle Bot",
+		"description": "Telegram bot that accepts and organizes orders so it's easy to call the noodle place",
+		"description_long": "In school, my friends and I regularly ordered noodles every thursday during lunch break. When other class mates and even parallel classes joined in, it became a lot of work to manage, so we wrote this Telegram bot to manage it for us.<br>Users could place an order with the bot in the morning and pay us in the first break, and we could just call the noodle place and read off the list of orders to be delivered during lunch break.<br><br>On one occasion, we had 31 orders totalling 194,30 €!",
+		"icons": ["csharp", "telegram"],
+		"color": "231, 224, 170",
+		"images": [
+			{
+				"file": "menu.png",
+				"caption": "Menu Categories"
+			},
+			{
+				"file": "orders.png",
+				"caption": "Compiled and sorted orders"
+			}
+		],
+		"technologies": [
+			{
+				"name": "C#",
+				"url": "https://docs.microsoft.com/en-us/dotnet/csharp/",
+				"explanation": "First experimentation with Dotnet and C#"
+			},
+			{
+				"name": "Telegram",
+				"url": "https://telegram.org",
+				"explanation": "For communication with the bot"
 			}
 		]
 	}
