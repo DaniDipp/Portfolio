@@ -301,7 +301,6 @@
 		"id": "twitchrelay",
 		"title": "Twitch Relay",
 		"description": "Forwarding Twitch chat messages to Redis streams for further processing",
-		"description_long": "As part of my experimentation with micro services and event-driven architecture, I set up this small Go app that collects user messages and system announcements from the Twitch IRC API and sends them to Redis Streams for other services to evaluate and react to.\nLike all of my current projects, this is using GitHub Actions for continuous deployment",
 		"icons": ["go", "redis", "twitch", "github", "docker"],
 		"color": "2, 200, 27",
 		"images": [],
@@ -417,7 +416,7 @@
 		"id": "wiki",
 		"title": "Community Wikis",
 		"description": "Online wikis for collecting and curating guides, tutorials and general info about various community areas",
-		"description_long": "I'm hosting a few instances of the [Wiki.js](https://js.wiki) software so my communities have a place to put guides, tutorials and general infos about our collective projects.\nIt uses Oauth2 with [Discord](https://discord.com) for authentication and [GitHub](https://github.com) for persistance and version control.",
+		"description_long": "I'm hosting a few instances of the [Wiki.js](https://js.wiki) software so my communities have a place to put guides, tutorials and general infos about our collective projects.<br>It uses Oauth2 with [Discord](https://discord.com) for authentication and [GitHub](https://github.com) for persistance and version control.",
 		"icons": ["wikijs", "docker", "github"],
 		"color": "5, 183, 238",
 		"images": [
