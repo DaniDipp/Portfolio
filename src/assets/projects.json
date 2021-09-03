@@ -416,7 +416,7 @@
 	{
 		"id": "wiki",
 		"title": "Community Wikis",
-		"description": "Online wikis for collecting and curating guides, tutorials and general info about various community areas",
+		"description": "Self-hosted online wikis for various areas of my communities",
 		"description_long": "I'm hosting a few instances of the [Wiki.js](https://js.wiki) software so my communities have a place to put guides, tutorials and general infos about our collective projects.<br>It uses Oauth2 with [Discord](https://discord.com) for authentication and [GitHub](https://github.com) for persistance and version control.",
 		"icons": ["wikijs", "docker", "github"],
 		"color": "5, 183, 238",
