@@ -327,21 +327,28 @@
 		"id": "hermatrix",
 		"title": "Hermatrix ARG",
 		"description": "Alternate Reality Game to promote community engagement for a Minecraft YouTube series.",
-		"description_long": "As part of [Docm77](https://youtube.com/docm77)'s and [Rendog](https://youtube.com/rendog)'s Minecraft series on YouTube, this alternate reality game promotes community interest and engagement with riddles, puzzles and minigames across various multi-media domains.",
+		"description_long": "As part of [Docm77](https://youtube.com/docm77)'s and [Rendog](https://youtube.com/rendog)'s Minecraft series on YouTube, this alternate reality game promotes community interest and engagement with riddles, puzzles and minigames across various multi-media domains.<br>The latest event, a public Minecraft event on 2021-09-04 had over 400 active participants and thousands of livestream viewers over 4 hours.",
 		"icons": ["docker", "gitlab", "nodejs", "minecraft"],
 		"color": "124, 0, 178",
 		"images": [
 			{
 				"file": "website.gif",
 				"caption": ""
+				"caption": "Website Homepage"
 			},
 			{
 				"file": "asteroids.gif",
 				"caption": ""
+				"caption": "Asteroids Minigame"
 			},
 			{
 				"file": "minecraft.png",
 				"caption": ""
+				"caption": "Minecraft Event (2021-09-04)"
+			},
+			{
+				"file": "players.jpg",
+				"caption": "Minecraft Event Group Photo"
 			}
 		],
 		"technologies": [
