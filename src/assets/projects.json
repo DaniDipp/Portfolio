@@ -86,6 +86,16 @@
 				"name": "Cloudflare",
 				"url": "https://www.cloudflare.com",
 				"explanation": "Subdomain DNS management"
+			},
+			{
+				"name": "itzg's Dockerized Minecraft Server",
+				"url": "https://github.com/itzg/docker-minecraft-server",
+				"explanation": "Really simple Minecraft server setup for testing and events"
+			},
+			{
+				"name": "Apache",
+				"url": "https://httpd.apache.org/",
+				"explanation": "Used to serve files over http (World downloads, custom resource packs, etc.)"
 			}
 		]
 	},
