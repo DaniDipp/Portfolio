@@ -333,17 +333,14 @@
 		"images": [
 			{
 				"file": "website.gif",
-				"caption": ""
 				"caption": "Website Homepage"
 			},
 			{
 				"file": "asteroids.gif",
-				"caption": ""
 				"caption": "Asteroids Minigame"
 			},
 			{
 				"file": "minecraft.png",
-				"caption": ""
 				"caption": "Minecraft Event (2021-09-04)"
 			},
 			{
@@ -491,6 +488,36 @@
 				"name": "Telegram",
 				"url": "https://telegram.org",
 				"explanation": "For communication with the bot"
+			}
+		]
+	},
+	{
+		"id": "buzzed",
+		"title": "Buzzed (Graduation Project)",
+		"description": "Multiplayer quiz game for language studies",
+		"description_long": "This was my graduation project at [HTL Mössingerstraße](https://www.htl-klu.at) (specialization area Electronics and Technical Computer Science). While my partner built four hardware controls with wireless chips, I built the game software and logic.<br>The game is a quiz game with multiple choice questions. Players compete against each other in a quiz game that's focused on language studies in a classroom setting.",
+		"icons": ["csharp"],
+		"color": "223, 33, 7",
+		"images": [
+			{
+				"file": "projector.jpg",
+				"caption": "Buzzed software projected in a classroom"
+			},
+			{
+				"file": "buzzer.jpg",
+				"caption": "Wireless remote control hardware with buttons"
+			}
+		],
+		"technologies": [
+			{
+				"name": "C#",
+				"url": "https://docs.microsoft.com/en-us/dotnet/csharp/",
+				"explanation": "First experimentation with Dotnet and C#"
+			},
+			{
+				"name": "Windows Presentation Foundation",
+				"url": "https://docs.microsoft.com/en-us/dotnet/framework/wpf/",
+				"explanation": "For the UI"
 			}
 		]
 	}
