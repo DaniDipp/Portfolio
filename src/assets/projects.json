@@ -68,7 +68,6 @@
 			{ "file": "multicraft.png", "caption": "Multicraft Web Interface" },
 			{ "file": "doc.png", "caption": "" },
 			{ "file": "mirrorpark.png", "caption": "" },
-			{ "file": "sneakyrp.png", "caption": "" },
 			{ "file": "juliusbaer.png", "caption": "" }
 		],
 		"technologies": [
@@ -96,6 +95,50 @@
 				"name": "Apache",
 				"url": "https://httpd.apache.org/",
 				"explanation": "Used to serve files over http (World downloads, custom resource packs, etc.)"
+			}
+		]
+	},
+	{
+		"id": "sneakyrp",
+		"title": "SneakyRP Roleplay Server",
+		"description": "Minecraft environment for teaching about inclusive and relationship-first roleplay",
+		"description_long": "I'm working with a team on this project is about fostering a community by teaching conflict-free roleplay with a focus on building relationships with the humans behind the characters.<br>We're using a custom modpack that's configured to maximize roleplay and social interactions with deep character customization, custom items, abilities, animations, and more.",
+		"icons": ["minecraft", "discord", "java", "docker", "wikijs", "mumble"],
+		"color": "255, 201, 81",
+		"images": [
+			{ "file": "sneakyrp.png", "caption": "In-game screenshot" },
+			{ "file": "emotes.gif", "caption": "Custom emotes and animations" }
+		],
+		"technologies": [
+			{
+				"name": "Multicraft",
+				"url": "https://www.multicraft.org",
+				"explanation": "Server management web interface with access management and permissions"
+			},
+			{
+				"name": "Discord",
+				"url": "https://discord.gg/",
+				"explanation": "For community management and communication"
+			},
+			{
+				"name": "Java",
+				"url": "https://www.java.com",
+				"explanation": "Development of custom Minecraft plugins in Java"
+			},
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			},
+			{
+				"name": "Mumble",
+				"url": "https://mumble.sourceforge.net/",
+				"explanation": "For positional and directional in-game voice chat"
+			},
+			{
+				"name": "Wiki.js",
+				"url": "https://js.wiki",
+				"explanation": "For wiki-like community guides and documentation"
 			}
 		]
 	},
