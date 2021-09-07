@@ -471,6 +471,37 @@
 		]
 	},
 	{
+		"id": "sm-render",
+		"title": "Sneaky Mouse Render",
+		"description": "Automates the task of rendering community avatars",
+		"description_long": "The Sneaky Mouse is a community avatar and each member can equip theirs with a wide variety of hats. This client-side app queries the database for the latest data, renders the requested member's mouse using the HTML5 Canvas API, and saves them as .png's for further video editing.",
+		"icons": ["svelte", "typescript", "docker"],
+		"color": "254, 174, 1",
+		"images": [
+			{
+				"file": "smotd.png",
+				"caption": "Sneaky Mouse of the Day"
+			}
+		],
+		"technologies": [
+			{
+				"name": "Svelte",
+				"url": "https://svelte.dev",
+				"explanation": "For client-side rendering"
+			},
+			{
+				"name": "TypeScript",
+				"url": "https://www.typescriptlang.org",
+				"explanation": "Used together with Svelte"
+			},
+			{
+				"name": "Docker",
+				"url": "https://www.docker.com",
+				"explanation": "For containerization"
+			}
+		]
+	},
+	{
 		"id": "wiki",
 		"title": "Community Wikis",
 		"description": "Self-hosted online wikis for various areas of my communities",
