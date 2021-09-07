@@ -436,9 +436,9 @@
 	},
 	{
 		"id": "serverrender",
-		"title": "Server-side Video Rendering API",
-		"description": "Rendering small, transparent videos on-the-fly for live stream overlay",
-		"description_long": "When this server-side application receives a web request, it parses the URL parameters and uses them to create a custom images sequence which is stitched together to a video by ffmpeg and sent back in the response. The video is also cached to instantly reply to future requests with the same parameters.",
+		"title": "Video Rendering API",
+		"description": "Server-side rendering of small, transparent videos on-the-fly for live stream overlay",
+		"description_long": "When this application receives a web request, it parses the URL parameters and uses them to create a custom images sequence which is stitched together to a video by ffmpeg and sent back in the response. The video is also cached to instantly reply to future requests with the same parameters.",
 		"icons": ["typescript", "deno", "ffmpeg", "github", "docker"],
 		"color": "194, 69, 131",
 		"images": [],
