@@ -381,7 +381,7 @@
 		"title": "Hermatrix ARG",
 		"description": "Alternate Reality Game to promote community engagement for a Minecraft YouTube series.",
 		"description_long": "As part of [Docm77](https://youtube.com/docm77)'s and [Rendog](https://youtube.com/rendog)'s Minecraft series on YouTube, this alternate reality game promotes community interest and engagement with riddles, puzzles and minigames across various multi-media domains.<br>The latest event, a public Minecraft event on 2021-09-04 had over 400 active participants and thousands of livestream viewers over 4 hours.",
-		"icons": ["docker", "gitlab", "nodejs", "minecraft"],
+		"icons": ["docker", "gitlab", "nodejs", "typescript", "minecraft"],
 		"color": "124, 0, 178",
 		"images": [
 			{
@@ -437,7 +437,7 @@
 	{
 		"id": "serverrender",
 		"title": "Video Rendering API",
-		"description": "Server-side rendering of small, transparent videos on-the-fly for live stream overlay",
+		"description": "Server-side rendering of small, transparent videos on—the—fly for live stream overlay",
 		"description_long": "When this application receives a web request, it parses the URL parameters and uses them to create a custom images sequence which is stitched together to a video by ffmpeg and sent back in the response. The video is also cached to instantly reply to future requests with the same parameters.",
 		"icons": ["typescript", "deno", "ffmpeg", "github", "docker"],
 		"color": "194, 69, 131",
